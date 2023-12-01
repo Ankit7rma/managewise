@@ -1,11 +1,12 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import Home from "./components/Pricing";
+import Features from "./components/Features";
 import "./index.css";
 import { Element, animateScroll as scroll } from "react-scroll";
-import Services from "./components/Services";
+import FAQ from "./components/FAQ";
+import Testimonials from "./components/Testimonials";
+import Pricing from "./components/Pricing";
 
 function App() {
   const scrollToTop = () => {
@@ -17,17 +18,17 @@ function App() {
       <Router>
         <div className="App">
           <Navbar className="fixed" />
-          <Element name="Home">
-            <Home />
+          <Element name="Features">
+            <Features />
           </Element>
-          <Element name="About">
-            <About />
+          <Element name="Pricing">
+            <Pricing />
           </Element>
-          <Element name="Contact">
-            <Contact />
+          <Element name="FAQ">
+            <FAQ />
           </Element>
-          <Element name="Services">
-            <Services />
+          <Element name="Testimonials">
+            <Testimonials />
           </Element>
           <button onClick={scrollToTop}>Scroll to Top</button>
         </div>
