@@ -1,6 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
-import Home from "./components/Pricing";
+import Home from "./components/Home";
 import Features from "./components/Features";
 import "./index.css";
 import { Element, animateScroll as scroll } from "react-scroll";
@@ -18,6 +18,7 @@ function App() {
       <Router>
         <div className="App">
           <Navbar className="fixed" />
+          <Home />
           <Element name="Features">
             <Features />
           </Element>
